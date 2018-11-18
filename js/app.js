@@ -57,7 +57,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
 		// Update the UI
 		document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         
-        if (setValue) {
+        if (setValue && setValue !== "") {
             winningScore = setValue;
         } else {
             winningScore = 100;
